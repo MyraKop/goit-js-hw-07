@@ -5,7 +5,8 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
-    const boxesContainer = document.getElementById('boxes');
+  const boxesContainer = document.getElementById('boxes');
+  boxesContainer.innerHTML = '';
     for (let i = 0; i < amount; i++) {
       const box = document.createElement('div');
       box.style.width = `${30 + i * 10}px`;
